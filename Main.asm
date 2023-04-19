@@ -234,7 +234,7 @@ commandline proc
 			mov edx,[eax + 4]
 			invoke WideCharToMultiByte,0,0,edx,-1,addr szFileName,256,0,0
 			
-			invoke MessageBox,0,addr szFileName,addr szFileName,MB_OK
+			;invoke MessageBox,0,addr szFileName,addr szFileName,MB_OK
 			
 			invoke	CreateFile,addr szFileName,GENERIC_READ,FILE_SHARE_READ or \
 				FILE_SHARE_WRITE,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_ARCHIVE,NULL
