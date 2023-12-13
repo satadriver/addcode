@@ -1,2 +1,2 @@
-# addcode
-addcode
+insert binary code into PE file.
+
